@@ -14,7 +14,7 @@ const config      = require('../config');
 
 // Сборка и минификация JS
 gulp.task('scripts', function() {
-  return runSequence('scripts:app', 'scripts:vendor');
+  return runSequence('scripts:vendor', 'scripts:app');
 });
 
 // Сборка и минификация (по желанию) скриптов проекта

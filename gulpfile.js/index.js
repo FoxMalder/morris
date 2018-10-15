@@ -21,10 +21,10 @@ require('require-dir')('./tasks', {recurse: true});
   gulp.task('default', function(cb) {
     return runSequence(
       'copy',
-     ['html', 'scripts', 'styles'],
+     ['html', 'styles', 'scripts'],
       'watch',
-      'cleancache',
       'server',
+      'cleancache',
       cb
     );
   });
