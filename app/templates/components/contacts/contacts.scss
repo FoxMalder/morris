@@ -29,11 +29,45 @@
     align-items: stretch;
     align-content: stretch;
     justify-content: center;
+    font-family: $font-family-open-sans;
+    font-size: 20px;
+    line-height: 28px;
+    color: #707070;
   }
 
   &_item {
     max-width: 250px;
     flex-basis: 33.3333%;
+    margin-right: 80px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    .h3 {
+      margin: 0;
+      padding: 0;
+      font-size: 20px;
+      line-height: 28px;
+      color: #707070;
+    }
+  }
+
+  &_options {
+    margin-top: 5px;
+
+    p {
+      margin-bottom: 5px;
+
+      &:last-child { margin-bottom: 0; }
+    }
+
+    a {
+      display: block;
+      color: #707070;
+
+      &:hover { color: #FD0; }
+    }
   }
 }
 
@@ -61,9 +95,7 @@
     .map-link {
       color: #273481;
 
-      &:hover {
-        color: #FD0;
-      }
+      &:hover { color: #FD0; }
     }
   }
 }
