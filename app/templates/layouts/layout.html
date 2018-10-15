@@ -37,6 +37,9 @@
   {% endblock %}
   </head>
   <body{% if bodyclass %} class="{{ bodyclass }}"{% else %}{% endif %}>
+    {# <!-- в случае тестирования разбейте стекло комментариев
+      <div class="px2px"></div>
+    --> #}
     {% block header %}{% endblock %}
     <main>
       {% block content %}{% endblock %}
