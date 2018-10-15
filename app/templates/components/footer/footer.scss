@@ -13,15 +13,10 @@
   }
 
   &_copyright {
-    max-width: 1169px;
-    margin: 0 auto;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    color: rgba(255, 255, 255, .44);
-    font-family: 'Open Sans';
-    font-size: 14px;
-    line-height: 24px;
+    color: #FFFFFF;
+    font-family: $font-family-roboto;
+    font-size: 26px;
+    line-height: 26px;
 
     p:last-child { margin-bottom: 0; }
   }
