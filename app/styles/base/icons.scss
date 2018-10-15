@@ -2,9 +2,4 @@
   position: relative;
   display: inline-block;
   transition: all .3s ease;
-
-  &-pattern {
-    @include size(82px, 35px);
-    background-image: inline('./assets/images/bg-pattern.png');
-  }
 }
