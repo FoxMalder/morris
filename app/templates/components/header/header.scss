@@ -1,30 +1,27 @@
 .header {
-  background-color: #1D1D1D;
+  background-color: #273481;
   padding: 0;
   margin: 0;
-  min-height: 818px;
+  min-height: 808px;
 
   &_bg {
     z-index: -1;
     position: absolute;
-    bottom: -1px;
-    left: -86px;
+    top: 0;
+    left: 0;
     right: 0;
-    width: 850px;
-    height: 617px;
+    width: 100%;
+    height: 100%;
     margin: 0;
     background-attachment: scroll;
-    background-position: 50% 50%;
+    background-position: 0% 0%;
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   &_wrap {
-    max-width: 980px;
-    margin: 180px auto 0 auto;
-    height: calc(818px - 180px);
-    z-index: 1;
-    position: relative;
+    max-width: 1109px;
+    margin: 0 auto;
   }
 
   &_main {
@@ -35,182 +32,5 @@
     text-align: center;
     justify-content: center;
     padding-left: 300px;
-  }
-
-  &--light {
-    position: fixed;
-    left: 0;
-    right: 0;
-    width: 100%;
-    z-index: 10;
-    background-color: rgba(255, 255, 255, .89);
-    min-height: auto;
-    transition: all .2s ease;
-
-    /*&.is-fixed {
-
-      .header_wrap {
-        padding: 10px 0 10px 0;
-
-        .logo {
-          position: relative;
-          top: -5px;
-        }
-      }
-    }*/
-
-    .header_wrap {
-      transition: all .2s ease;
-      max-width: 1169px;
-      height: auto;
-      margin: 0 auto;
-      padding: 25px 0 30px 0;
-      display: flex;
-      align-items: center;
-      align-content: center;
-      justify-content: space-between;
-    }
-
-    .menu-link {
-      color: #2E2B77;
-      padding: 20px 0;
-
-      &:hover {
-        font-weight: 100;
-      }
-    }
-
-    .menu {
-      transition: all .1s ease;
-      visibility: hidden;
-      opacity: 0;
-      width: 0;
-
-      &.is-active {
-        margin-left: 20px;
-        transition: all .2s ease;
-        opacity: 1;
-        width: auto;
-        visibility: visible;
-      }
-    }
-  }
-
-  &-nav {
-    display: flex;
-    align-items: center;
-    align-content: center;
-
-    &_box {
-      display: flex;
-      align-items: center;
-      align-content: center;
-      // margin-right: 20px;
-    }
-
-    &_actions {
-      transition: all .3s ease;
-      opacity: 1;
-      visibility: visible;
-      width: auto;
-      margin-left: auto;
-      margin-right: 10px;
-
-      &.is-hide {
-        width: 0;
-        transition: all .2s ease;
-        opacity: 0;
-        visibility: hidden;
-      }
-    }
-  }
-}
-
-.headline {
-  color: #FFFFFF;
-
-  h1 {
-    color: #FFFFFF;
-    font-family: 'Playfair Display';
-    font-size: 99px;
-    line-height: 132px;
-    text-transform: uppercase;
-  }
-
-  p {
-    font-family: 'Open Sans';
-    font-size: 21px;
-    line-height: 28px;
-    margin: 0;
-  }
-
-  &_actions {
-    margin-top: 70px;
-  }
-}
-
-.hamburger {
-  display: flex;
-  width: 40px;
-  height: 28px;
-  flex-direction: column;
-  transition: all .3s ease;
-  position: relative;
-  justify-content: space-between;
-
-  &-wrap {
-    cursor: pointer;
-    padding: 20px;
-    position: relative;
-    display: flex;
-    flex-grow: 1;
-    height: 100%;
-    align-items: center;
-    transition: all .3s ease;
-
-    &:hover {
-
-      .hamburger_i {
-        border-color: #2E2B77;
-        background-color: #2E2B77;
-      }
-    }
-
-    &.is-active {
-
-      .hamburger {
-
-        .hamburger_i {
-          animation: pulse 1.8s tocross;
-          background-color: #262d30;
-          border-color: #262d30;
-
-          &:nth-child(1) {
-            transform: translate(0px, 12px) rotate(45deg);
-          }
-
-          &:nth-child(2) {
-            background-color: #262d30;
-            border-color: #262d30;
-            opacity: 0;
-            transform: translate(0px, 0px);
-          }
-
-          &:nth-child(3) {
-            transform: translate(0px, -12px) rotate(-45deg);
-          }
-        }
-      }
-    }
-  }
-
-  &_i {
-    background-color: #666666;
-    height: 4px;
-    border: 1px solid #707070;
-    border-radius: 2px;
-    width: 100%;
-    transition: all .3s linear;
-    position: relative;
   }
 }

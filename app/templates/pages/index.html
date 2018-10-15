@@ -12,12 +12,14 @@ bodyclass: 'index-page'
 {% endblock %}
 
 {% block content %}
-leaders
-product (ШИРОКИЙ ДИАПАЗОН СМАЗОЧНЫХ МАТЕРИАЛОВ ДЛЯ КОММЕРЧЕСКИХ АВТОМОБИЛЕЙ )
-content (МЫ ПОНИМАЕМ ВАШИ ПОТРЕБНОСТИ)
-specifications
-workshop-pro
-official
-discount
-  contacts
+{% include "components/leaders/leaders.html" %}
+{% include "components/product/product.html" %}
+{% include "components/content/content.html" %}
+{% include "components/specifications/specifications.html" %}
+{% include "components/leaders/workshop-pro.html" %}
+{% include "components/official/official.html" %}
+{% include "components/discount/discount.html" %}
+
+
+contacts
 {% endblock %}
