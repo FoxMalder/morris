@@ -1,0 +1,191 @@
+// адаптивный видео-блок
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+  border: 1px solid;
+
+  & iframe,
+  & object,
+  & embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// Полпробела
+span.tsp {
+  display: inline-block;
+  width: .12em;
+  overflow: hidden;
+  text-decoration: inherit;
+}
+
+hr {
+  margin-top:    $line-height-computed;
+  margin-bottom: $line-height-computed;
+  border: 0;
+  border-top: 1px solid $hr-border;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+  color: $headings-color;
+
+  small,
+  .small {
+    font-weight: normal;
+    line-height: 1;
+    color: #777;
+  }
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3 {
+  margin-top: $line-height-computed;
+  margin-bottom: ($line-height-computed / 2);
+
+  small,
+  .small {
+    font-size: 65%;
+  }
+}
+
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: ($line-height-computed / 2);
+  margin-bottom: ($line-height-computed / 2);
+
+  small,
+  .small {
+    font-size: 75%;
+  }
+}
+
+h1, .h1 {
+  font-size: $font-size-h1;
+  font-family: 'Playfair Display';
+  color: #2E2B77;
+  text-transform: uppercase;
+  line-height: 116px;
+}
+
+h2, .h2 {
+  font-family: 'Montserrat';
+  font-size: $font-size-h2;
+  line-height: 40px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  color: #1D1D1D;
+}
+
+.h2-light {
+  font-family: 'TT Prosto Sans';
+  font-size: 36px;
+  line-height: 53px;
+  color: #2E2B77;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+
+  &.lighter {
+    font-weight: 100;
+  }
+}
+
+h3, .h3 {
+  font-size: $font-size-h3;
+
+  &-light {
+    font-family: 'TT Prosto Sans';
+    font-size: 35px;
+    line-height: 35px;
+    font-weight: 100;
+    color: #2E2B77;
+    text-transform: uppercase;
+  }
+}
+h4, .h4 { font-size: $font-size-h4; }
+h5, .h5 { font-size: $font-size-h5; }
+h6, .h6 { font-size: $font-size-h6; }
+
+p {
+  margin: 0 0 ($line-height-computed / 2);
+}
+
+// Отступы
+p, ul, ol, pre, table, blockquote {
+  margin-top: 0px;
+  margin-bottom: 21px;
+}
+
+ul ul, ol ol, ul ol, ol ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+code {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: $code-color;
+  background-color: $code-bg;
+  border-radius: $border-radius-base;
+}
+
+.text {
+
+  p {
+    margin-bottom: 35px;
+    font-size: 22px;
+    font-weight: 100;
+    line-height: 32px;
+    color: #1D1D1D;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.light-list {
+  list-style-type: none;
+  margin: 10px 0 0 0;
+  padding: 0;
+  font-family: 'TT Prosto Sans';
+
+  & > li {
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 16px;
+    color: #2E2B77;
+    font-weight: 200;
+
+    &:last-child { margin-bottom: 0; }
+  }
+}
+
+.items-list {
+  margin: 0 0 30px 60px;
+  padding: 0;
+  font-family: 'TT Prosto Sans';
+
+  & > li {
+    margin: 0 0 10px 0;
+    padding: 0;
+
+    &:last-child { margin-bottom: 0; }
+  }
+}

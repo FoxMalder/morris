@@ -1,0 +1,157 @@
+*::placeholder {
+  color: $placeholder-color;
+  opacity: 1;
+}
+
+*::placeholder-shown {
+  color: $placeholder-color;
+}
+
+::selection {
+  background: $selection-bg;
+  color:      $selection-color;
+}
+
+input,
+textarea,
+button {
+  outline: none;
+  font-family: $font-family-base;
+}
+
+input[placeholder],
+input:placeholder {
+  text-overflow: ellipsis;
+}
+
+textarea {
+  hyphens: auto;
+}
+
+.form-group {
+  display: flex;
+  margin-bottom: 20px;
+  width: 100%;
+
+  &.is-error {
+
+    .form-control {
+      border-color: #dc3545;
+    }
+  }
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid #6B797F;
+  border-radius: 5px;
+  padding: 15px 27px 12px 27px;
+  color: #2E2B77;
+  font-family: 'Montserrat';
+  font-size: 22px;
+  font-weight: 100;
+  line-height: 22px;
+  transition: .3s ease;
+
+  &:hover {
+    border-color: #2E2B77;
+  }
+}
+
+.form-horizontal {
+  border-radius: 10px 5px 100px 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+  position: relative;
+
+  .form-group {
+    align-items: center;
+    align-content: center;
+
+    &.is-error {
+
+      .form-control,
+      .button {
+        border-color: #dc3545;
+      }
+    }
+  }
+
+  .form-control {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 0;
+    height: 58px;
+  }
+
+  .button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    height: 58px;
+    border-left: transparent;
+
+    &:hover {
+      background-color: #8681FC;
+      border-color: #2E2B77;
+    }
+
+    &:focus {
+      background-color: #F3F7F8;
+      border-color: #2E2B77;
+      color: #2E2B77;
+    }
+  }
+}
+
+.form-radio,
+.form-checkbox, {
+  cursor: pointer;
+
+  .label {
+    margin-left: 20px;
+    font-family: 'TT Prosto Sans';
+    font-size: 22px;
+    line-height: 22px;
+    color: #666;
+  }
+}
+
+.checkbox,
+.radio {
+  display: none;
+}
+
+.checkbox-custom,
+.radio-custom {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #2E2B77;
+  border-radius: 3px;
+  position: relative;
+}
+
+.checkbox-custom,
+.radio-custom,
+.label {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.checkbox:checked + .checkbox-custom::before,
+.radio:checked + .radio-custom::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  bottom: 4px;
+  left: 4px;
+  background: #2E2B77;
+  border-radius: 2px;
+}
+
+.radio-custom,
+.radio:checked + .radio-custom::before {
+  border-radius: 50%;
+}
