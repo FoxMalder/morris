@@ -1,0 +1,32 @@
+.specifications {
+  background-color: #273481;
+  padding-top: 80px;
+  padding-bottom: 60px;
+  position: relative;
+  z-index: 0;
+
+  &_wrap {
+    max-width: 1109px;
+    margin: 0 auto;
+  }
+
+  &_badge {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 354px;
+    height: 354px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    position: absolute;
+    right: calc(354px / 2);
+    top: calc(-354px / 2);
+    z-index: -1;
+  }
+
+  &_headline {
+    padding-bottom: 30px;
+    border-bottom: 3px solid #FFDD00;
+  }
+}
