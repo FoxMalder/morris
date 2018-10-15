@@ -1,0 +1,28 @@
+.discount {
+  padding-top: 50px;
+  padding-bottom: 20px;
+
+  &_wrap {
+    width: 860px;
+    margin: 0 auto;
+  }
+
+  &_content {
+    display: flex;
+    align-items: center;
+    align-content: center;
+  }
+
+  &_info {
+    margin-right: 25px;
+    color: #FFDD00;
+    font-family: 'Open Sans';
+    font-size: 19px;
+    line-height: 29px;
+
+    p {
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
