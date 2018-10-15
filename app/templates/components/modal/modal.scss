@@ -36,26 +36,32 @@
     max-width: 324px;
   }
 
-  &-card-big {
-    max-width: 558px;
-    max-height: 795px;
+  &_bubble {
+    margin: 0 auto;
+    width: 254px;
+    height: 254px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    text-align: center;
 
-    .modal_content {
-      position: relative;
-      background-color: #fff;
-
-      .actions-right {
-        position: absolute;
-        right: 30px;
-        bottom: 15px;
-      }
+    &-yellow {
+      background-color: #FD0;
     }
-  }
 
-  &-rekvizity {
+    &_content {
+      height: 100%;
+      width: 254px;
+      height: 254px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
 
-    .modal_content {
-      padding: 0;
+      p {
+
+        &:last-child { margin-bottom: 0; }
+      }
     }
   }
 
@@ -64,29 +70,6 @@
     padding: 34px 44px 34px 44px;
     display: flex;
     flex-direction: column;
-  }
-
-  &_logo {
-    margin-bottom: 40px;
-  }
-
-  &_info {
-    margin-top: 35px;
-    margin-bottom: 20px;
-    font-family: 'TT Prosto Sans';
-    font-size: 14px;
-    line-height: 22px;
-    color: #707070;
-    text-align: center;
-  }
-
-  &_tel {
-    margin-top: auto;
-    color: #2E2B77;
-
-    .tel-link {
-      color: #2E2B77;
-    }
   }
 
   &-form {
@@ -99,65 +82,6 @@
     .form-actions {
       display: flex;
       justify-content: center;
-    }
-
-    .form-control {
-      font-size: 14px;
-      line-height: 14px;
-      color: #8281A2;
-      padding: 0 6px 6px 6px;
-      border: none;
-      border-radius: 0;
-      border-bottom: 1px solid #8281A2;
-
-      &:focus {
-        border-bottom-width: 2px;
-      }
-
-      &::placeholder {
-        color: #8281A2;
-      }
-    }
-  }
-
-  &-agent {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-bottom: 30px;
-
-    &_photo {
-      margin-bottom: 30px;
-
-      img { vertical-align: bottom; }
-    }
-
-
-    &_info {
-      font-family: 'TT Prosto Sans';
-      color: #707070;
-      font-size: 14px;
-      line-height: 28px;
-      font-weight: 400;
-      text-align: center;
-    }
-
-    &_name {
-      font-style: italic;
-      text-align: center;
-    }
-
-    &_position {
-      font-weight: 100;
-      text-align: center;
-      margin-bottom: 10px;
-    }
-
-    &_token {
-      font-style: italic;
-      text-align: center;
     }
   }
 
