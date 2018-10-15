@@ -158,34 +158,3 @@ code {
     margin-bottom: 0;
   }
 }
-
-.light-list {
-  list-style-type: none;
-  margin: 10px 0 0 0;
-  padding: 0;
-  font-family: 'TT Prosto Sans';
-
-  & > li {
-    margin: 0 0 10px 0;
-    padding: 0;
-    font-size: 16px;
-    line-height: 16px;
-    color: #2E2B77;
-    font-weight: 200;
-
-    &:last-child { margin-bottom: 0; }
-  }
-}
-
-.items-list {
-  margin: 0 0 30px 60px;
-  padding: 0;
-  font-family: 'TT Prosto Sans';
-
-  & > li {
-    margin: 0 0 10px 0;
-    padding: 0;
-
-    &:last-child { margin-bottom: 0; }
-  }
-}
