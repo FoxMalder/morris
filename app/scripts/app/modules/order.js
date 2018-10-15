@@ -34,8 +34,9 @@ if ($) $(function () {
         type: "POST",
         url: "order.php",
         data: {
-          'call_name': call_name,
-          'call_tel': call_tel
+          'order_name':  order_name,
+          'order_tel':   order_tel,
+          'order_email': order_email
         },
         success: function() {
 
