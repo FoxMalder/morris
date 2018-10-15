@@ -1,1 +1,2 @@
 //= modules/contacts
+//= modules/modals
