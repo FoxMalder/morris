@@ -70,7 +70,7 @@
       <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="/"><i class="fas fa-home"></i> Morris</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Список заявок 🛒</li>
+          <li class="breadcrumb-item active" aria-current="page">Список заявок <i class="fa fa-truck" aria-hidden="true"></i></li>
         </ol>
       </nav>
 
@@ -90,7 +90,7 @@
               if ( file_exists($fileorder) ) {
                 include("_orders.txt");
               } else {
-                echo '<tr class="bg-warning is-empty"><td colspan="9">🛒 Заявок, увы, пока нет :—(</td></tr>';
+                echo '<tr class="bg-warning is-empty"><td colspan="9"><i class="fa fa-truck" aria-hidden="true"></i> Заявок, увы, пока нет :—(</td></tr>';
               }
             ?>
           </tbody>
