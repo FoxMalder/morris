@@ -1,4 +1,11 @@
 .content {
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  &_wrap {
+    max-width: 1109px;
+    margin: 0 auto;
+  }
 
   &_headline {
     min-height: calc(50px + 64px + 20px);
@@ -29,6 +36,13 @@
 
         box-shadow: -3px 3px 6px rgba(0, 0, 0, .32);
       }
+    }
+  }
+
+  &_text {
+
+    p {
+
     }
   }
 }
