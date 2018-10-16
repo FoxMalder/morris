@@ -1308,6 +1308,16 @@ code {
   color: #FD0;
 }
 
+.content {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.content_wrap {
+  max-width: 1109px;
+  margin: 0 auto;
+}
+
 .content_headline {
   min-height: calc(50px + 64px + 20px);
   margin-bottom: 25px;
@@ -1602,6 +1612,17 @@ code {
   align-content: center;
   justify-content: center;
   margin-bottom: 60px;
+}
+
+.product {
+  background-color: rgba(240, 240, 240, 0.38);
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.product_wrap {
+  max-width: 1109px;
+  margin: 0 auto;
 }
 
 .specifications {
