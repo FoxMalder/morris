@@ -2,6 +2,7 @@
   background-color: #fafafa;
   padding-top: 70px;
   padding-bottom: 70px;
+  overflow: hidden;
 
   &_wrap {
     max-width: 1109px;
@@ -24,6 +25,7 @@
   }
 
   &_icon {
+    min-width: 60px;
     width: 60px;
     height: 60px;
     background-color: #fff;
@@ -38,7 +40,7 @@
   }
 
   &_name {
-    max-width: 229px;
+    min-width: 229px;
     background-color: #273481;
     color: #FD0;
     font-family: 'PF Agora Slab Pro';
