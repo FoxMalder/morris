@@ -32,16 +32,17 @@
 
   &_content {
     padding-top: 30px;
-    font-family: 'Open Sans';
+    font-family: $font-family-open-sans;
     font-size: 16px;
     line-height: 32px;
+    color: #333333;
 
     p {
       margin-bottom: 10px;
 
-      &:last-child {
-        margin-bottom: 0;
-      }
+      strong { font-weight: 600; }
+
+      &:last-child { margin-bottom: 0; }
     }
   }
 }
