@@ -4,6 +4,17 @@
   padding-bottom: 70px;
   overflow: hidden;
 
+  &_headline {
+
+    .h2-dark {
+      color: #333;
+
+      span {
+        display: block;
+      }
+    }
+  }
+
   &_wrap {
     max-width: 1109px;
     margin: 0 auto;
