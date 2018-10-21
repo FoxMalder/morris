@@ -58,15 +58,24 @@
     }
 
     &--three:after {
-
+      top: 13px;
+      left: 208px;
+      @include size(130.774px, 164.949px);
+      background-image: svg-load('three.svg');
     }
 
     &--two:after {
-
+      top: 13px;
+      left: 208px;
+      @include size(176.142px, 180.372px);
+      background-image: svg-load('two.svg');
     }
 
     &--one:after {
-
+      top: 13px;
+      left: 208px;
+      @include size(264.926px, 448.009px);
+      background-image: svg-load('one.svg');
     }
   }
 
