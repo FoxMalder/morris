@@ -4,6 +4,7 @@
   margin: 0;
   min-height: 808px;
   z-index: 0;
+  position: relative;
 
   &_bg {
     z-index: -1;
@@ -43,7 +44,7 @@
     &-string {
       padding-left: 50px;
       padding-right: 40px;
-      margin-bottom: 50px;
+      margin-bottom: 30px;
       position: relative;
       height: 50px;
       width: 100%;
@@ -148,6 +149,33 @@
 
   &_actions {
     margin-top: 25px;
+  }
+
+  &_help {
+    max-width: 1109px;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 35px;
+    text-align: right;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    align-items: flex-end;
+    align-content: flex-end;
+    justify-content: flex-end;
+
+    &_text {
+      font-family: 'Roboto Slab';
+      color: #ffffff;
+      font-size: 23px;
+      line-height: 60px;
+    }
+
+    &_logo {
+      margin-left: 20px;
+    }
   }
 }
 
