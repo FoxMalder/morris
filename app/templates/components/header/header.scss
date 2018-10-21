@@ -82,6 +82,36 @@
       margin-left: 30px;
     }
   }
+
+  &_main {
+    max-width: 659px;
+
+    h1 {
+      position: relative;
+
+      & > span.mrl {
+        display: block;
+      }
+
+      sup {
+        position: relative;
+        top: -20px;
+        right: 11px;
+      }
+    }
+  }
+
+  &_info {
+    font-family: 'PF Agora Slab Pro';
+    color: #FD0;
+    font-size: 28px;
+    line-height: 32px;
+    padding-right: 180px;
+  }
+
+  &_actions {
+    margin-top: 30px;
+  }
 }
 
 .header-tel {
