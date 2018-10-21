@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,700&subset=cyrillic');
+
 @font-face {
   font-family: 'TT Prosto Sans';
   src: url('../fonts/TT-Prosto-Sans/tt_prosto_sans_regular.eot');
@@ -74,6 +76,7 @@
   font-style: normal;
   font-weight: 700;
 }
+
 @font-face {
   font-family: 'TT Prosto Sans';
   src: url('../fonts/TT-Prosto-Sans/tt_prosto_sans_bold_italic.eot');
@@ -96,4 +99,136 @@
   font-weight: 800;
 }
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans|Playfair+Display');
+
+@font-face {
+  font-family: 'PF Agora Slab Pro';
+  font-weight: normal;
+  font-style: normal;
+
+  src: url('../fonts/PFAgoraSlabPro/PFAgoraSlabPro-Regular.eot');
+  src: url('../fonts/PFAgoraSlabPro/PFAgoraSlabPro-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/PFAgoraSlabPro/PFAgoraSlabPro-Regular.woff2') format('woff2'),
+  url('../fonts/PFAgoraSlabPro/PFAgoraSlabPro-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'PF Agora Slab Pro';
+  font-weight: 500;
+  font-style: italic;
+
+  src: url('../fonts/PFAgoraSlabPro/PFAgoraSlabPro-MediumItalic.eot');
+  src: url('../fonts/PFAgoraSlabPro/PFAgoraSlabPro-MediumItalic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/PFAgoraSlabPro/PFAgoraSlabPro-MediumItalic.woff2') format('woff2'),
+  url('../fonts/PFAgoraSlabPro/PFAgoraSlabPro-MediumItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'PF Agora Slab Pro';
+  font-weight: 100;
+  font-style: italic;
+
+  src: url('../fonts/PFAgoraSlabPro/PFAgoraSlabPro-ThinIt.eot');
+  src: url('../fonts/PFAgoraSlabPro/PFAgoraSlabPro-ThinIt.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/PFAgoraSlabPro/PFAgoraSlabPro-ThinIt.woff2') format('woff2'),
+  url('../fonts/PFAgoraSlabPro/PFAgoraSlabPro-ThinIt.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'PF Agora Slab Pro';
+  font-weight: 100;
+  font-style: normal;
+
+  src: url('../fonts/PFAgoraSlabPro/PFAgoraSlabPro-Thin.eot');
+  src: url('../fonts/PFAgoraSlabPro/PFAgoraSlabPro-Thin.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/PFAgoraSlabPro/PFAgoraSlabPro-Thin.woff2') format('woff2'),
+  url('../fonts/PFAgoraSlabPro/PFAgoraSlabPro-Thin.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'PF Agora Slab Pro';
+  font-weight: 300;
+  font-style: normal;
+
+  src: url('../fonts/PFAgoraSlabPro/PFAgoraSlabPro-Light.eot');
+  src: url('../fonts/PFAgoraSlabPro/PFAgoraSlabPro-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/PFAgoraSlabPro/PFAgoraSlabPro-Light.woff2') format('woff2'),
+  url('../fonts/PFAgoraSlabPro/PFAgoraSlabPro-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'PF Agora Slab Pro';
+  font-weight: 500;
+  font-style: normal;
+
+  src: url('../fonts/PFAgoraSlabPro/PFAgoraSlabPro-Medium.eot');
+  src: url('../fonts/PFAgoraSlabPro/PFAgoraSlabPro-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/PFAgoraSlabPro/PFAgoraSlabPro-Medium.woff2') format('woff2'),
+  url('../fonts/PFAgoraSlabPro/PFAgoraSlabPro-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'PF Agora Slab Pro';
+  font-weight: 900;
+  font-style: italic;
+
+  src: url('../fonts/PFAgoraSlabPro/PFAgoraSlabPro-BlackItalic.eot');
+  src: url('../fonts/PFAgoraSlabPro/PFAgoraSlabPro-BlackItalic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/PFAgoraSlabPro/PFAgoraSlabPro-BlackItalic.woff2') format('woff2'),
+  url('../fonts/PFAgoraSlabPro/PFAgoraSlabPro-BlackItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'PF Agora Slab Pro';
+  font-weight: bold;
+  font-style: italic;
+
+  src: url('../fonts/PFAgoraSlabPro/PFAgoraSlabPro-BoldItalic.eot');
+  src: url('../fonts/PFAgoraSlabPro/PFAgoraSlabPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/PFAgoraSlabPro/PFAgoraSlabPro-BoldItalic.woff2') format('woff2'),
+  url('../fonts/PFAgoraSlabPro/PFAgoraSlabPro-BoldItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'PF Agora Slab Pro';
+  font-weight: normal;
+  font-style: italic;
+
+  src: url('../fonts/PFAgoraSlabPro/PFAgoraSlabPro-Italic.eot');
+  src: url('../fonts/PFAgoraSlabPro/PFAgoraSlabPro-Italic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/PFAgoraSlabPro/PFAgoraSlabPro-Italic.woff2') format('woff2'),
+  url('../fonts/PFAgoraSlabPro/PFAgoraSlabPro-Italic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'PF Agora Slab Pro';
+  font-weight: 900;
+  font-style: normal;
+
+  src: url('../fonts/PFAgoraSlabPro/PFAgoraSlabPro-Black.eot');
+  src: url('../fonts/PFAgoraSlabPro/PFAgoraSlabPro-Black.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/PFAgoraSlabPro/PFAgoraSlabPro-Black.woff2') format('woff2'),
+  url('../fonts/PFAgoraSlabPro/PFAgoraSlabPro-Black.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'PF Agora Slab Pro';
+  font-weight: bold;
+  font-style: normal;
+
+  src: url('../fonts/PFAgoraSlabPro/PFAgoraSlabPro-Bold.eot');
+  src: url('../fonts/PFAgoraSlabPro/PFAgoraSlabPro-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/PFAgoraSlabPro/PFAgoraSlabPro-Bold.woff2') format('woff2'),
+  url('../fonts/PFAgoraSlabPro/PFAgoraSlabPro-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'PF Agora Slab Pro';
+  font-weight: 300;
+  font-style: italic;
+
+  src: url('../fonts/PFAgoraSlabPro/PFAgoraSlabPro-LightItalic.eot');
+  src: url('../fonts/PFAgoraSlabPro/PFAgoraSlabPro-LightItalic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/PFAgoraSlabPro/PFAgoraSlabPro-LightItalic.woff2') format('woff2'),
+  url('../fonts/PFAgoraSlabPro/PFAgoraSlabPro-LightItalic.woff') format('woff');
+}
