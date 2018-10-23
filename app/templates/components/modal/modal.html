@@ -32,12 +32,15 @@
         <!-- end .form-group -->
         <!-- begin .form-group -->
         <div class="form-group">
-          <label class="form-checkbox" for="ok_personal">
-            <input class="checkbox" type="checkbox" id="ok_personal">
-            <span class="checkbox-custom"></span>
-            <span class="label">я даю согласие на обработку моих персональных данных</span>
-            <a class="pseudolink _modal-link" href="#personal">подробнее о политике конфидециальности</a>
-          </label>
+          <div class="form-check">
+            <input type="checkbox" name="reg" id="ok_personal">
+            <label for="ok_personal">
+              <span class="form-check-control">
+                я даю согласие на обработку моих персональных данных
+                <a class="pseudolink _modal-link" href="#personal">подробнее о политике конфидециальности</a>
+              </span>
+            </label>
+          </div><!-- /.form-check -->
         </div>
         <!-- end .form-group -->
         <!-- begin .form-actions -->

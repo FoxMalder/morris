@@ -23,15 +23,15 @@ a {
 
 .pseudolink {
   text-decoration: none;
-  border-bottom: 1px dotted #DDDDDD;
+  border-bottom: 1px dashed #DDDDDD;
   color: #707070;
   font-family: 'TT Prosto Sans';
   font-size: 8px;
   line-height: 14px;
 
   &:hover {
-    color: #FFDD00;
-    border-bottom-color: #FFDD00;
+    color: #333333;
+    border-bottom-color: #333333;
   }
 }
 
