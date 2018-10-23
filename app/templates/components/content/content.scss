@@ -10,32 +10,15 @@
   &_headline {
     min-height: calc(50px + 64px + 20px);
     margin-bottom: 25px;
-    max-width: 995px;
+    max-width: 941px;
 
     &-line {
       position: relative;
       height: 50px;
       width: 100%;
-      background-color: #FFDD00;
-      box-shadow: 0 3px 6px rgba(0, 0, 0, .32);
-
-      &:after {
-        content: '';
-        position: absolute;
-        width: 0;
-        height: 0;
-        bottom: -10px;
-        right: 30px;
-        box-sizing: border-box;
-
-        border: 16px solid #FFDD00;
-        border-color: #FFDD00 #FFDD00 transparent #fff;
-
-        transform-origin: 0 0;
-        transform: rotate(-90deg);
-
-        box-shadow: -3px 3px 6px rgba(0, 0, 0, .32);
-      }
+      margin-left: -6px;
+      /* background-color: #FFDD00; */
+      /* box-shadow: 0 3px 6px rgba(0, 0, 0, .32); */
     }
   }
 
