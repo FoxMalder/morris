@@ -5,34 +5,27 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
-  font-family: 'TT Prosto Sans';
+  font-family: 'PF Agora Slab Pro';
 
   &_item {
-    margin-right: 2px;
+    margin-right: 55px;
 
-    &.is-active .tabs-list_link {
-      background-color: #2E2B77;
-      border-color: #2E2B77;
+    &.is-active .specifications-tabs_link {
       color: #ffffff;
-      font-weight: bold;
     }
 
     &:last-child { margin-right: 0; }
   }
 
   &_link {
-    border-radius: 3px;
-    background-color: transparent;
-    border: 1px solid transparent;
-    color: #A6A19F;
-    font-size: 18px;
-    line-height: 18px;
-    font-weight: 200;
-    padding: 10px 20px 9px 20px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, .45);
+    font-size: 28px;
+    line-height: 28px;
+    font-weight: medium;
 
     &:hover {
-      color: #2E2B77;
-      border-color: #2E2B77;
+      color: #ffffff;
     }
   }
 }
