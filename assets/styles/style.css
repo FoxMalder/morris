@@ -945,57 +945,125 @@ textarea {
   color: #273481;
 }
 
-.form-radio,
-.form-checkbox {
+.form-check {
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+  padding-left: 30px;
   cursor: pointer;
 }
 
-.form-radio .label,
-.form-checkbox .label {
-  margin-left: 20px;
+.form-check label {
+  min-height: 20px;
+  padding-left: 0;
+  margin-bottom: 0;
+  cursor: pointer;
+  color: #707070;
   font-family: 'TT Prosto Sans';
-  font-size: 22px;
-  line-height: 22px;
-  color: #666;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
 }
 
-.checkbox,
-.radio {
-  display: none;
+.form-check input[type=checkbox],
+.form-check input[type=radio] {
+  position: absolute;
+  margin-top: 4px\9;
+  margin-left: -20px;
 }
 
-.checkbox-custom,
-.radio-custom {
-  width: 20px;
-  height: 20px;
-  border: 1px solid #2E2B77;
-  border-radius: 3px;
+.form-check label {
   position: relative;
 }
 
-.checkbox-custom,
-.radio-custom,
-.label {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.checkbox:checked + .checkbox-custom::before,
-.radio:checked + .radio-custom::before {
-  content: "";
-  display: block;
+.form-check span:before, .form-check span:after,
+.form-check div:before,
+.form-check div:after {
+  content: '';
   position: absolute;
-  top: 4px;
-  right: 4px;
-  bottom: 4px;
-  left: 4px;
-  background: #2E2B77;
-  border-radius: 2px;
+  top: -2px;
+  margin: auto;
 }
 
-.radio-custom,
-.radio:checked + .radio-custom::before {
-  border-radius: 50%;
+.form-check input[type="radio"], .form-check input[type="checkbox"] {
+  display: none;
+}
+
+.form-check .form-check-control {
+  color: #707070;
+  font-family: 'TT Prosto Sans';
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+}
+
+.form-check .form-check-control:before {
+  width: 17px;
+  height: 17px;
+  background-color: white;
+  border: 1px solid #707070;
+  border-radius: 3px;
+  top: 3px;
+  left: -30px;
+  box-sizing: border-box;
+  transition: all .2s ease;
+}
+
+.form-check .form-check-control:after {
+  width: 14px;
+  height: 11px;
+  background-image: svg-load("check-small.svg", fill=white);
+  background-position: 50% 50%;
+  text-indent: -9999px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  overflow: hidden;
+  left: -27px;
+  top: 3px;
+  color: transparent;
+  transition: all .2s ease;
+}
+
+.form-check .form-check-control:hover {
+  color: #707070;
+}
+
+.form-check .form-check-control:hover:before {
+  border-color: #707070;
+}
+
+.form-check .form-check-control:hover:after {
+  background-image: svg-load("check-small.svg", fill=#c1c7cb);
+}
+
+.form-check input[type="checkbox"]:checked + label .form-check-control:after {
+  background-image: svg-load("check-small.svg", fill=#30af0b);
+}
+
+.form-check input[type="checkbox"]:checked + label .form-check-control {
+  color: #273481;
+}
+
+.form-check input[type="checkbox"]:checked + label .form-check-control:before {
+  border-color: #273481;
+}
+
+.form-check input[type="checkbox"]:checked + label .form-check-control:hover:before {
+  border-color: #707070;
+}
+
+.form-check input[type="checkbox"]:disabled + label .form-check-control {
+  color: #adb1b9;
+  cursor: not-allowed;
+}
+
+.form-check input[type="checkbox"]:disabled + label .form-check-control:before {
+  border: 1px solid #d6dadd;
+  background-color: #f7f7f8;
+}
+
+.form-check input[type="checkbox"]:disabled:checked + label .form-check-control:after {
+  background-image: svg-load("check-small.svg", fill=#adb1b9);
 }
 
 .icon {
@@ -1026,7 +1094,7 @@ a:active, a.active {
 
 .pseudolink {
   text-decoration: none;
-  border-bottom: 1px dotted #DDDDDD;
+  border-bottom: 1px dashed #DDDDDD;
   color: #707070;
   font-family: 'TT Prosto Sans';
   font-size: 8px;
@@ -1034,8 +1102,8 @@ a:active, a.active {
 }
 
 .pseudolink:hover {
-  color: #FFDD00;
-  border-bottom-color: #FFDD00;
+  color: #333333;
+  border-bottom-color: #333333;
 }
 
 button[disabled=disabled],
@@ -1371,7 +1439,7 @@ code {
 }
 
 .contacts_options a:hover {
-  color: #FD0;
+  color: #273481;
 }
 
 .balloon {
@@ -1418,30 +1486,16 @@ code {
 .content_headline {
   min-height: calc(50px + 64px + 20px);
   margin-bottom: 25px;
-  max-width: 995px;
+  max-width: 941px;
 }
 
 .content_headline-line {
   position: relative;
   height: 50px;
   width: 100%;
-  background-color: #FFDD00;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.32);
-}
-
-.content_headline-line:after {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 0;
-  bottom: -10px;
-  right: 30px;
-  box-sizing: border-box;
-  border: 16px solid #FFDD00;
-  border-color: #FFDD00 #FFDD00 transparent #fff;
-  transform-origin: 0 0;
-  transform: rotate(-90deg);
-  box-shadow: -3px 3px 6px rgba(0, 0, 0, 0.32);
+  margin-left: -6px;
+  /* background-color: #FFDD00; */
+  /* box-shadow: 0 3px 6px rgba(0, 0, 0, .32); */
 }
 
 .content_text {
@@ -1517,6 +1571,18 @@ code {
   margin-bottom: 0;
 }
 
+.logo-link:hover svg {
+  transition: all .3s ease;
+  position: relative;
+  top: -1px;
+}
+
+.logo-link-right:hover svg {
+  transition: all .3s ease;
+  position: relative;
+  top: -1px;
+}
+
 .header {
   background-color: #F5CD21;
   padding: 45px 0;
@@ -1567,18 +1633,25 @@ code {
   padding-right: 40px;
   margin-bottom: 30px;
   position: relative;
-  height: 50px;
-  width: 100%;
-  background-color: #FFDD00;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.32);
+  overflow: hidden;
+  height: 60px;
+  width: 870px;
+  /* background-color: #FFDD00; */
+  /* box-shadow: 0 3px 6px rgba(0, 0, 0, .32); */
   display: flex;
   align-items: center;
   align-content: center;
   justify-content: space-between;
 }
 
+.header_line-string-bg {
+  position: absolute;
+  left: -140px;
+  top: 0;
+  z-index: -1;
+}
+
 .header_line_base {
-  padding-top: 3px;
   font-family: 'TT Prosto Sans';
   font-size: 10px;
   line-height: 14px;
@@ -1599,7 +1672,6 @@ code {
 }
 
 .header_line_aside {
-  padding-top: 4px;
   margin-left: 30px;
 }
 
@@ -1705,6 +1777,10 @@ code {
   font-size: 30px;
   line-height: 30px;
   color: #ffffff;
+}
+
+.header-tel:hover {
+  color: #273481;
 }
 
 .leaders {
@@ -2134,6 +2210,8 @@ code {
   padding-bottom: 60px;
   position: relative;
   z-index: 0;
+  display: none;
+  visibility: hidden;
 }
 
 .specifications_wrap {
@@ -2154,6 +2232,10 @@ code {
   right: calc(354px / 2);
   top: calc(-354px / 2);
   z-index: -1;
+}
+
+.specifications_badge img {
+  vertical-align: bottom;
 }
 
 .specifications_headline {
@@ -3498,6 +3580,11 @@ img.mfp-img {
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
     order: 1;
+  }
+  .specifications {
+    display: block;
+    visibility: visible;
+    opacity: 1;
   }
 }
 
