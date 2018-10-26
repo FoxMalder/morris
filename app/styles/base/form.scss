@@ -38,6 +38,10 @@ textarea {
     .form-control {
       border-color: #dc3545;
     }
+
+    .form-check label {
+      color: #dc3545;
+    }
   }
 }
 
@@ -67,6 +71,7 @@ textarea {
     color: #273481;
   }
 }
+
 .form-check {
   position: relative;
   display: block;
@@ -121,6 +126,7 @@ textarea {
     font-size: 12px;
     line-height: 14px;
     font-weight: 400;
+    position: relative;
 
     &:before {
       @include size(17px);
@@ -141,35 +147,28 @@ textarea {
       background-repeat: no-repeat;
       display: inline-block;
       overflow: hidden;
+      top: -54.5px;
       left: -27px;
-      top: 3px;
       color: transparent;
+      opacity: 0;
       transition: all .2s ease;
     }
 
     &:hover {
       color: #707070;
 
-      &:before {
-        border-color: #707070;
-      }
-
-      &:after {
-        background-image: svg-load('check.svg', stroke=#707070);
-      }
+      &:before { border-color: #707070; }
     }
   }
 
   input[type="checkbox"]:checked + label .form-check-control:after {
-    background-image: svg-load('check.svg', stroke=rgb(48, 175, 11));
+    opacity: 1;
   }
 
   input[type="checkbox"]:checked + label .form-check-control {
     color: #273481;
 
-    &:before {
-      border-color: #273481;
-    }
+    &:before { border-color: #273481; }
   }
 
   input[type="checkbox"]:checked + label .form-check-control:hover:before {

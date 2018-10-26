@@ -23,6 +23,7 @@ if ($) $(function () {
     e.preventDefault();
     let form        = $(this);
     let formInput   = form.find('.form-control');
+    let formCkeck   = form.find('.form-check');
     let formSendBtn = $('._order_btn');
 
     let order_name  = form.find('input[name="order_name"]').val();
@@ -44,6 +45,7 @@ if ($) $(function () {
 
           clear_form();
           formInput.closest('.form-group').removeClass('is-error ui-shake');
+          formCkeck.closest('.form-group').removeClass('is-error ui-shake');
           formSendBtn.text('Заявка принята');
         },
         error: function() {
@@ -51,11 +53,13 @@ if ($) $(function () {
           console.log('error');
 
           formInput.closest('.form-group').addClass('is-error ui-shake');
+          formCkeck.closest('.form-group').addClass('is-error ui-shake');
 
         }
       });
     } else {
       formInput.closest('.form-group').addClass('is-error ui-shake');
+      formCkeck.closest('.form-group').addClass('is-error ui-shake');
     }
 
     return false;

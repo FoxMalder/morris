@@ -51,6 +51,11 @@
   height: 659px;
   position: relative;
 
+  .leaders_wrap {
+    position: relative;
+    height: 100%;
+  }
+
   &_bg {
     z-index: -1;
     position: absolute;
@@ -87,10 +92,8 @@
   &_uk {
     position: absolute;
     bottom: 60px;
-    right: 130px;
+    right: 40px;
 
-    img {
-      vertical-align: bottom;
-    }
+    img { vertical-align: bottom; }
   }
 }
