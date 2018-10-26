@@ -31,6 +31,7 @@
   }
 
   .header {
+    min-height: 640px;
 
     &_wrap {
       max-width: 100%;
@@ -44,10 +45,65 @@
       opacity: 0;
     }
 
-    .header_help_text {
+    &_line {
       display: none;
       visibility: hidden;
       opacity: 0;
+    }
+
+    &_main h1 {
+      font-size: 25px;
+      line-height: 34px;
+      text-align: center;
+
+      .logo_o {
+        position: inherit;
+        text-indent: inherit;
+        width: auto;
+        margin: 0;
+
+        &:before {
+          content: none;
+        }
+      }
+
+       sup {
+         position: inherit;
+         top: inherit;
+         right: inherit;
+         font-size: 25px;
+         line-height: 34px;
+         margin-left: -2px;
+       }
+    }
+
+    .header_help {
+      max-width: 100%;
+      bottom: 130px;
+      left: 0;
+      right: 0;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+
+      &_text {
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+      }
+
+      &_logo {
+        margin-left: 0;
+      }
+    }
+
+    &_actions {
+      position: absolute;
+      bottom: 20px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      justify-content: center;
     }
   }
 
