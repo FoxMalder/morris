@@ -68,6 +68,12 @@
       &:hover { color: #273481; }
     }
   }
+
+  &-mobile {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
 }
 
 .balloon {
