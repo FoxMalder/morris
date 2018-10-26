@@ -46,3 +46,51 @@
     }
   }
 }
+
+.workshop-pro {
+  height: 659px;
+  position: relative;
+
+  &_bg {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 1286px;
+    height: 659px;
+    margin: 0 auto;
+    background-attachment: scroll;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &_content {
+    position: relative;
+    padding-top: 72px;
+    padding-left: 380px;
+    font-family: $font-family-open-sans;
+    font-size: 24px;
+    line-height: 32px;
+    color: #273481;
+
+    p {
+      margin-bottom: 10px;
+
+      strong { font-weight: 600; }
+
+      &:last-child { margin-bottom: 0; }
+    }
+  }
+
+  &_uk {
+    position: absolute;
+    bottom: 60px;
+    right: 130px;
+
+    img {
+      vertical-align: bottom;
+    }
+  }
+}

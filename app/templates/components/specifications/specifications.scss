@@ -40,6 +40,13 @@
   &_headline {
     padding-bottom: 30px;
     border-bottom: 3px solid #FFDD00;
+
+    h2 {
+
+      @media #{$lg} {
+        max-width: 500px;
+      }
+    }
   }
 
   &_tabs {
@@ -49,10 +56,18 @@
 
     &_panel {
       margin-top: 70px;
+      margin-bottom: 40px;
 
-      img {
-        text-align: center;
-        vertical-align: bottom;
+      &-content {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+        justify-content: center;
+        img {
+          text-align: center;
+          vertical-align: bottom;
+        }
       }
     }
   }

@@ -5,6 +5,13 @@
   &_wrap {
     max-width: 1109px;
     margin: 0 auto;
+
+    h2.h2-dark {
+
+      @media #{$lg} {
+        max-width: 100%;
+      }
+    }
   }
 
   &_content {
