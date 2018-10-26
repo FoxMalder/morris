@@ -148,6 +148,12 @@
       align-items: flex-start;
       align-content: flex-start;
 
+      &_box {
+        display: flex;
+        align-items: flex-start;
+        align-content: flex-start;
+      }
+
       .img-versimax {
         width: 168px;
         min-width: 168px;
@@ -177,6 +183,7 @@
 
       .qr-versimax {
         min-width: 38px;
+        max-width: 38px;
       }
     }
   }

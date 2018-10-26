@@ -24,7 +24,6 @@
   }
 
   .header,
-  .product,
   .content,
   .specifications,
   .workshop-pro {
@@ -38,6 +37,62 @@
       max-width: 100%;
       margin: 0 auto;
       padding: 0 30px;
+    }
+  }
+
+  .product {
+
+    &_wrap {
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 0 30px;
+      min-height: auto;
+    }
+
+    &_headline {
+      text-align: center;
+    }
+
+    &_img {
+      display: none;
+      visibility: hidden;
+      opacity: 0;
+    }
+
+    &_item:after {
+      content: none;
+    }
+
+    &_box {
+      margin-left: 0;
+      max-width: initial;
+    }
+
+    &_body_info {
+      flex-direction: column;
+
+      &_box:first-child {
+        margin-bottom: 20px;
+      }
+
+      .info-versimax {
+        margin-left: 0;
+        font-size: 11px;
+        line-height: 22px;
+        min-width: 84px;
+        margin-right: 45px;
+
+        &:after {
+          @include size(55.56px, 23.63px);
+          background-image: svg-load('arrowmob.svg');
+          bottom: -17px;
+          right: -43px;
+        }
+      }
+
+      .qr-versimax {
+        max-width: 88px;
+      }
     }
   }
 
