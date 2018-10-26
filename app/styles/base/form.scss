@@ -39,8 +39,12 @@ textarea {
       border-color: #dc3545;
     }
 
-    .form-check label {
+    .form-check .form-check-control {
       color: #dc3545;
+
+      &:before {
+        border-color: #dc3545;
+      }
     }
   }
 }

@@ -30,7 +30,12 @@ if ($) $(function () {
     let order_tel   = form.find('input[name="order_tel"]').val();
     let order_email = form.find('input[name="order_email"]').val();
 
-    if(formInput.val().length > 0) {
+
+    if ( formInput.val().length > 0 && $('#ok_personal').is(':checked') ) {
+
+      formInput.closest('.form-group').removeClass('is-error ui-shake');
+      formCkeck.closest('.form-group').removeClass('is-error ui-shake');
+
       $.ajax({
         type: "POST",
         url: "order.php",
@@ -64,9 +69,12 @@ if ($) $(function () {
 
         }
       });
+
     } else {
+
       formInput.closest('.form-group').addClass('is-error ui-shake');
       formCkeck.closest('.form-group').addClass('is-error ui-shake');
+
     }
 
     return false;
