@@ -138,13 +138,53 @@
     color: #333333;
 
     p { margin: 0; }
+
+    &_info {
+      position: relative;
+      width: 400px;
+      margin-top: 30px;
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      align-content: flex-start;
+
+      .img-versimax {
+        width: 168px;
+        min-width: 168px;
+      }
+
+      .info-versimax {
+        min-width: 38px;
+        max-width: 34px;
+        color: #2E377C;
+        font-size: 5px;
+        line-height: 8.8px;
+        margin-left: 15px;
+        margin-right: 15px;
+        position: relative;
+
+        &:after {
+          content: '';
+          position: absolute;
+          @include size(24.087px, 10.646px);
+          background-image: svg-load('arow.svg');      z-index: 1;
+          background-repeat: no-repeat;
+          bottom: -12px;
+          right: -16px;
+        }
+      }
+
+      .qr-versimax {
+        min-width: 38px;
+      }
+    }
   }
 
   &_img {
     z-index: -1;
     position: absolute;
     bottom: 0;
-    top: 100px;
+    top: 115px;
     right: -165px;
     width: 1058px;
     height: 1058px;
