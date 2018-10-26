@@ -117,6 +117,7 @@
   }
 
   .product {
+    padding-top: 40px;
 
     &_wrap {
       max-width: 100%;
@@ -142,6 +143,10 @@
     &_box {
       margin-left: 0;
       max-width: initial;
+    }
+
+    &_cards {
+      padding-top: 40px;
     }
 
     &_body_info {
