@@ -6,6 +6,12 @@
   z-index: 0;
   position: relative;
 
+  &_mobile {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+
   &_bg {
     z-index: -1;
     position: absolute;
