@@ -37,7 +37,13 @@
   }
 
   &-personal {
-    max-width: 800px;
+    max-width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    .modal_body {
+      padding: 48px 86px;
+    }
   }
 
   &_bubble {
@@ -75,18 +81,49 @@
     }
   }
 
+  &_icon {
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+
+  &_info {
+    padding: 0 47px;
+    text-align: center;
+    font-family: 'TT Prosto Sans';
+    color: #333333;
+    font-size: 27px;
+    line-height: 33px;
+    margin-bottom: 74px;
+
+    p {
+      color: #333333;
+      margin-bottom: 30px;
+
+      &:last-child { margin-bottom: 0; }
+    }
+  }
+
   &_content {
     height: 100%;
-    padding: 34px 44px 34px 44px;
+    padding: 0;
     display: flex;
     flex-direction: column;
+    padding: 17px 0 21px 0;
   }
 
   &-form {
+    padding: 0 44px;
     font-family: $font-family-base;
 
     .form-group {
-      margin-bottom: 40px;
+      margin-bottom: 26px;
     }
 
     .form-actions {
@@ -95,7 +132,8 @@
     }
   }
 
-  &-actions {
+  &_actions {
+    width: 100%;
     display: flex;
     align-items: center;
     align-content: center;
@@ -107,6 +145,50 @@
     align-items: center;
     align-content: center;
     justify-content: center;
+  }
+
+  .check-link {
+    display: block;
+    margin-top: 10px;
+  }
+}
+
+.modal-personal .modal_content {
+  font-family: $font-family-base;
+  color: #707070;
+  font-size: 20px;
+  line-height: 38px;
+
+  h3 {
+    font-family: 'PF Agora Slab Pro';
+    font-size: 40px;
+    line-height: 42px;
+    color: #333333;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+
+  h4 {
+    font-size: 32px;
+    line-height: 38px;
+    font-weight: 600;
+  }
+
+  ol, ul {
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      > ol, > ul {
+        padding-left: 40px;
+      }
+    }
   }
 }
 

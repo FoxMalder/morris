@@ -17,7 +17,7 @@
       <form action="forms.php" class="modal-form _order">
         <!-- begin .form-group -->
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Как Вас зовут?" name="order_name" required>
+          <input type="text" class="form-control" placeholder="Как Вас зовут?" name="order_name">
         </div>
         <!-- end .form-group -->
         <!-- begin .form-group -->
@@ -27,7 +27,7 @@
         <!-- end .form-group -->
         <!-- begin .form-group -->
         <div class="form-group">
-          <input type="email" class="form-control" placeholder="Ваш e-mail" name="order_email" required>
+          <input type="email" class="form-control" placeholder="Ваш e-mail" name="order_email">
         </div>
         <!-- end .form-group -->
         <!-- begin .form-group -->
@@ -37,7 +37,7 @@
             <label for="ok_personal">
               <span class="form-check-control">
                 я даю согласие на обработку моих персональных данных
-                <a class="pseudolink _modal-link" href="#personal">подробнее о политике конфидециальности</a>
+                <span class="check-link"><a class="pseudolink _modal-link" href="#personal">подробнее о политике конфидециальности</a></span>
               </span>
             </label>
           </div><!-- /.form-check -->
@@ -64,23 +64,20 @@
   <div class="modal_body">
     <!-- begin .modal_content -->
     <div class="modal_content">
-      <!-- begin .modal_bubble -->
-      <div class="modal_bubble modal_bubble-yellow">
-        <!-- begin .modal_bubble_content -->
-        <div class="modal_bubble_content">
-          <p>для получения скидки <span>10%</span> необходимо оставить свои контактные данные</p>
-        </div>
-        <!-- end .modal_bubble_content -->
+      <!-- begin .modal_icon -->
+      <div class="modal_icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 95.969 95.969" width="95.969" height="95.969"><path data-name="Path 1246" d="M31.374 54.382c0 .123.123.123 0 0L37.9 57.95l3.568 6.521 16.851 30.513a1.92 1.92 0 0 0 1.6.984h.123a1.7 1.7 0 0 0 1.6-1.23l34.2-92.278a1.927 1.927 0 0 0-.365-1.968 1.877 1.877 0 0 0-1.969-.369L1.23 34.2A1.7 1.7 0 0 0 0 35.8a1.964 1.964 0 0 0 .984 1.723zm9.474 1.353A1.436 1.436 0 0 0 40.11 55l-4.183-2.34 20.424-13.165-13.165 20.547zM90.924 4.921L59.673 89.694l-14.4-25.961L64.1 34.45a1.868 1.868 0 0 0-2.584-2.584l-29.28 18.825L6.275 36.3z" fill="#273481"/></svg>
       </div>
-      <!-- end .modal_bubble -->
+      <!-- end .modal_icon -->
       <!-- begin .modal_info -->
       <div class="modal_info">
-        <p></p>
+        <p>ваша заявка отправлена!</p>
+        <p>мы свяжемся с&nbsp;вами в самое ближайшее время</p>
       </div>
       <!-- end .modal_info -->
       <!-- begin .modal_actions -->
       <div class="modal_actions">
-        <button class="button">Вернуться на сайт</button>
+        <button class="button" onclick="$.magnificPopup.close();">Вернуться на сайт</button>
       </div>
       <!-- end .modal_actions -->
     </div>

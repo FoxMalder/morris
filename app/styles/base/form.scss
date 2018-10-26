@@ -70,7 +70,6 @@ textarea {
 .form-check {
   position: relative;
   display: block;
-  margin-bottom: 10px;
   padding-left: 30px;
   cursor: pointer;
 
@@ -135,8 +134,8 @@ textarea {
     }
 
     &:after {
-      @include size(14px, 11px);
-      background-image: svg-load('check-small.svg', fill=rgb(255, 255, 255));
+      @include size(11.209px, 8.981px);
+      background-image: svg-load('check.svg');
       background-position: 50% 50%;
       text-indent: -9999px;
       background-repeat: no-repeat;
@@ -156,13 +155,13 @@ textarea {
       }
 
       &:after {
-        background-image: svg-load('check-small.svg', fill=rgb(193, 199, 203));
+        background-image: svg-load('check.svg', stroke=#707070);
       }
     }
   }
 
   input[type="checkbox"]:checked + label .form-check-control:after {
-    background-image: svg-load('check-small.svg', fill=rgb(48, 175, 11));
+    background-image: svg-load('check.svg', stroke=rgb(48, 175, 11));
   }
 
   input[type="checkbox"]:checked + label .form-check-control {
@@ -192,7 +191,7 @@ textarea {
     &:checked {
 
       & + label .form-check-control:after {
-        background-image: svg-load('check-small.svg', fill=#adb1b9);
+        background-image: svg-load('check.svg', stroke=#adb1b9);
       }
     }
   }
