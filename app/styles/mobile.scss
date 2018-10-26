@@ -1,18 +1,58 @@
 @media #{$sm} {
   .header,
-  .leaders,
   .product,
   .content,
   .specifications,
-  .workshop-pro,
-  .official,
-  .discount {
+  .workshop-pro {
     display: none;
     visibility: hidden;
   }
 
+  .leaders {
+
+    &_wrap {
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  }
+
+  .official {
+
+    &_wrap {
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 0 30px;
+    }
+
+    &_list {
+      flex-wrap: wrap;
+    }
+  }
+
+  .discount {
+
+    &_wrap {
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 0 30px;
+    }
+
+    &_info {
+      display: none;
+      visibility: hidden;
+    }
+
+    &_actions {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
   .contacts {
-    padding-top: 30px;
+    padding-top: 40px;
     padding-bottom: 30px;
 
     &_wrap {
@@ -64,7 +104,12 @@
   }
 
   .footer {
-    display: none;
-    visibility: hidden;
+
+    &_wrap {
+      max-width: 100%;
+      margin: 0 auto;
+      flex-direction: column-reverse;
+      justify-content: center;
+    }
   }
 }
