@@ -46,7 +46,14 @@ if ($) $(function () {
           clear_form();
           formInput.closest('.form-group').removeClass('is-error ui-shake');
           formCkeck.closest('.form-group').removeClass('is-error ui-shake');
-          formSendBtn.text('Заявка принята');
+
+          $.magnificPopup.open({
+            items: {
+              src: '#order-ok'
+            },
+            type: 'inline'
+          });
+
         },
         error: function() {
 
