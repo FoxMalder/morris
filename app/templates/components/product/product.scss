@@ -143,7 +143,7 @@
       position: relative;
       width: 400px;
       margin-top: 30px;
-      width: 100%;
+      /* width: 100%; */
       display: flex;
       align-items: flex-start;
       align-content: flex-start;
@@ -167,7 +167,8 @@
           content: '';
           position: absolute;
           @include size(24.087px, 10.646px);
-          background-image: svg-load('arow.svg');      z-index: 1;
+          background-image: svg-load('arow.svg');
+          z-index: 1;
           background-repeat: no-repeat;
           bottom: -12px;
           right: -16px;
