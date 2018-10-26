@@ -106,14 +106,14 @@
         }
       }
 
-       sup {
-         position: inherit;
-         top: inherit;
-         right: inherit;
-         font-size: 25px;
-         line-height: 34px;
-         margin-left: -2px;
-       }
+      sup {
+        position: inherit;
+        top: inherit;
+        right: inherit;
+        font-size: 25px;
+        line-height: 34px;
+        margin-left: -2px;
+      }
     }
 
     .header_help {
@@ -356,7 +356,6 @@
 
     &_mobile {
       padding: 30px;
-      display: block;
       visibility: visible;
       opacity: 1;
       display: flex;
