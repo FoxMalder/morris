@@ -2,6 +2,12 @@
   background-color: #273481;
   padding: 60px 0;
 
+  &_mobile {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+
   &_wrap {
     max-width: 1109px;
     margin: 0 auto;
