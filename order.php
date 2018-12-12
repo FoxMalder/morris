@@ -29,7 +29,7 @@
   mail ($address,$sub,$mes,$headers);
 
   // Записать данные из формы в файл
-  $fo=fopen("_orders.txt", "a");
+  $fo=fopen("orders/_orders.txt", "a");
   fwrite($fo, "
   <tr>
    <td>$time</td>
